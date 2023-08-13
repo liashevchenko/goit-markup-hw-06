@@ -1,0 +1,8 @@
+@media screen and (min-width: 428px) {
+  .mob-tel {
+    font-size: 36px;
+  }
+  .mob-socials-list {
+    gap: 56px;
+  }
+}
