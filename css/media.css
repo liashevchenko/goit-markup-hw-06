@@ -1,8 +1,124 @@
 @media screen and (min-width: 428px) {
+  /* Mobile menu(header) */
   .mob-tel {
     font-size: 36px;
   }
   .mob-socials-list {
     gap: 56px;
+  }
+
+  /* Modal window */
+  .modal-window {
+    width: 392px;
+  }
+  .modal-caption {
+    font-size: 16px;
+  }
+  .policy-label {
+    font-size: 12px;
+  }
+  .modal-comment-wrap {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Header */
+  .menu-open-btn {
+    display: none;
+  }
+  .flex-header {
+    display: flex;
+  }
+  .header-address {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Hero */
+  hero-header {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+
+  /* Modal */
+  .modal-window {
+    width: 408px;
+  }
+  .modal-comment-wrap {
+    width: 376px;
+  }
+
+  /* Features */
+  .features-flex {
+    gap: 72px 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .features-list-item {
+    flex-basis: calc((100% - 48px) / 2);
+  }
+  .header-feature {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* Header */
+  .container {
+    max-width: 1158px;
+  }
+
+  .header-container {
+    align-items: baseline;
+  }
+  .header-address {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  /* Hero */
+  hero-header {
+    margin-bottom: 48px;
+  }
+
+  .hero {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-2x.jpg);
+    }
+  }
+
+  /* Features */
+  .features-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .header-feature {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .icons-fetures-container {
+    display: flex;
   }
 }
