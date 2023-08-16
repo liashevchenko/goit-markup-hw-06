@@ -49,7 +49,7 @@
   }
 
   /* Hero */
-  hero-header {
+  .hero-header {
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
@@ -73,12 +73,16 @@
   .header-start {
     text-align: start;
   }
+  .header-feature {
+    text-align: start;
+  }
 
   /* Team */
   .team-flex {
     display: flex;
     gap: 64px 24px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .team-point {
     flex-basis: calc((100% - 48px) / 2);
@@ -89,6 +93,9 @@
   .team-container {
     max-width: 552px;
   }
+  .team-item {
+    text-align: center;
+  }
 
   /* Customers */
 
@@ -96,7 +103,7 @@
     gap: 24px;
   }
   .customers-list-item {
-    flex-basis: calc((100% - 72px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
   }
 
   /* Footer */
@@ -129,7 +136,6 @@
 
   .footer-logo-socials {
     gap: 24px;
-    justify-content: center;
     margin-bottom: 72px;
   }
   .footer-container {
