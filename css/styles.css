@@ -852,14 +852,13 @@ ul {
 
 /* Second page portfolio */
 .projects {
-  padding: 96px 0 120px 0;
+  padding: 48px 0 80px;
 }
 .btn-nav-flex {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-basis: calc((100%-120px) / 5);
-  margin-bottom: 72px;
+  gap: 16px 24px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
 }
 .button-portfolio {
   color: var(--iris);
@@ -871,13 +870,16 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   cursor: pointer;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-nav-item:nth-child(3) {
+  margin-right: 20px;
 }
 
 .button-portfolio:hover,
@@ -894,15 +896,12 @@ ul {
 
 .projects-flex {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
+  gap: 48px;
+  flex-direction: column;
 }
-.projects-list-item {
-  width: calc((100% - 48px) / 3);
-}
+
 .projects-list-link {
-  display: block;
+  display: inline-block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-list-link:hover,
@@ -916,8 +915,15 @@ ul {
   border: 1px solid var(--cornflower);
   border-top: none;
 }
+.projects-image {
+  width: 390px;
+}
 .projects-item-caption {
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: start;
 }
 .text-portfolio {
   font-size: 16px;
